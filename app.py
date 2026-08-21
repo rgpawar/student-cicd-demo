@@ -5,8 +5,8 @@ def predict_result(marks):
         return "FAIL"
     
 if __name__ == "__main__":
-    marks = int(input("Enter student marks: "))
-    #marks = 75
+    
+    marks = 75
     result = predict_result(marks)
     print("Student Marks:", marks)
     print("Predicted Result:", result)
