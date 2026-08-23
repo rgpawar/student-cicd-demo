@@ -27,27 +27,19 @@ y = data["Placement"]
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
-    test_size=0.25,
+    test_size=0.20,
     random_state=42
 )
 
 
 # Train model
-'''model = DecisionTreeClassifier(
-    max_depth=3,
-    random_state=42
-)'''
-from sklearn.ensemble import GradientBoostingClassifier
-
-model = GradientBoostingClassifier(
-    n_estimators=100,
-    learning_rate=0.1,
+model = DecisionTreeClassifier(
     max_depth=3,
     random_state=42
 )
 
 model.fit(X_train, y_train)
-
+print("Model being trained:", type(model).__name__)
 
 # Test model
 predictions = model.predict(X_test)
