@@ -10,7 +10,7 @@ if __name__ == "__main__":
     result = predict_result(marks)
     print("Student Marks:", marks)
     print("Predicted Result:", result)
-    print("Test Cases")
+    
     
     
   
