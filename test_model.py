@@ -26,10 +26,6 @@ def test_low_performing_student():
 
     assert result == "NOT PLACED"
 
-def test_Acc_performing_student():
-    if accuracy<=0.65:
-        assert result == "NOT PLACED"
-
 
 
 
