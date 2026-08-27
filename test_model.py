@@ -24,7 +24,7 @@ def test_low_performing_student():
         0
     )
 
-    assert result == " PLACED"
+    assert result == "NOT PLACED"
 
 
 
