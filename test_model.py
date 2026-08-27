@@ -11,7 +11,7 @@ def test_high_performing_student():
         1
     )
 
-    assert result == "NOT PLACED"
+    assert result == "PLACED"
 
 
 def test_low_performing_student():
